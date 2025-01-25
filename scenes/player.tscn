@@ -1,11 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3skv6a3ilalc"]
+[gd_scene load_steps=6 format=3 uid="uid://b3skv6a3ilalc"]
 
 [ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="1_8y82w"]
+[ext_resource type="Script" path="res://scenes/interactor.gd" id="2_k7rue"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_423om"]
 size = Vector2(16, 32)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1rghy"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_feju6"]
 size = Vector2(16, 32)
 
 [node name="Player" type="CharacterBody2D"]
@@ -19,5 +23,11 @@ shape = SubResource("RectangleShape2D_423om")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
 texture = SubResource("PlaceholderTexture2D_1rghy")
+
+[node name="Interactor" type="Area2D" parent="CollisionShape2D"]
+script = ExtResource("2_k7rue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D/Interactor"]
+shape = SubResource("RectangleShape2D_feju6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
