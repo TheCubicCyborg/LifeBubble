@@ -37,8 +37,11 @@ func _physics_process(delta: float) -> void:
 		velocity = velocity.lerp(_player_speed * normd, delta * _input_smoothing_factor)
 		#direction_facing = lerp(
 			#direction_facing, velocity.angle(), delta * _rotation_smoothing_factor
-		#) # FIXME
-		direction_facing = velocity.angle()
+		#) # 
+		direction_facing = lerp_angle(
+			direction_facing, velocity.angle(), delta * _rotation_smoothing_factor
+		)
+		#direction_facing = velocity.angle()
 		_collision_shape.rotation = direction_facing
 		
 	else:

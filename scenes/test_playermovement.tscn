@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bu5ymw7jsm0ad"]
+[gd_scene load_steps=2 format=3 uid="uid://2ul2etkpv3dy"]
 
-[ext_resource type="PackedScene" uid="uid://b3skv6a3ilalc" path="res://scenes/player.tscn" id="1_5apyp"]
+[ext_resource type="Script" path="res://scenes/GameManager.gd" id="1_l68v2"]
 
-[node name="TestPlayermovement" type="Node2D"]
+[node name="GameManager2" type="Node2D"]
+script = ExtResource("1_l68v2")
+max_oxygen = 10.0
 
-[node name="Player" parent="." instance=ExtResource("1_5apyp")]
-position = Vector2(378, 312)
-_default_facing_dir = Vector2(0, -1)
+[node name="Map" type="Node2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Map"]
