@@ -6,7 +6,4 @@
 
 [node name="Player" parent="." instance=ExtResource("1_5apyp")]
 position = Vector2(378, 312)
-player_speed = 40.0
-input_smoothing_factor = 20.0
-rotation_smoothing_factor = 10.0
-default_facing_dir = Vector2(0, -1)
+_default_facing_dir = Vector2(0, -1)
