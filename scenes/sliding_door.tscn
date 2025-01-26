@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcs2cs5xju06t"]
+
+[ext_resource type="Texture2D" uid="uid://bvgwxojp3maug" path="res://icon.svg" id="1_0lga2"]
+[ext_resource type="Script" path="res://scenes/sliding_door.gd" id="1_nre1q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aw3fi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b6v5x"]
+radius = 29.75
+
+[sub_resource type="Animation" id="Animation_mc0ar"]
+resource_name = "open"
+
+[sub_resource type="Animation" id="Animation_6y6fh"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_edd6h"]
+_data = {
+"RESET": SubResource("Animation_6y6fh"),
+"open": SubResource("Animation_mc0ar")
+}
+
+[node name="SlidingDoor" type="StaticBody2D" node_paths=PackedStringArray("slide_door_anim")]
+script = ExtResource("1_nre1q")
+slide_door_anim = NodePath("AnimationPlayer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_aw3fi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.155, 0.155)
+texture = ExtResource("1_0lga2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_b6v5x")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_edd6h")
+}
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
