@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://d0tgu5avsh5sb"
+path="res://.godot/imported/Sample Oxygen Fill.png-45fe0bfa90020b2aee9ba698ed097e1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/UI/Sample Oxygen Fill.png"
+dest_files=["res://.godot/imported/Sample Oxygen Fill.png-45fe0bfa90020b2aee9ba698ed097e1a.ctex"]
 
 [params]
 

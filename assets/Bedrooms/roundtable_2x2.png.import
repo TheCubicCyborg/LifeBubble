@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://cdonp42bb34k1"
+path="res://.godot/imported/roundtable_2x2.png-178baaa12c8b39276ccdd2e5ed00a052.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Bedrooms/roundtable_2x2.png"
+dest_files=["res://.godot/imported/roundtable_2x2.png-178baaa12c8b39276ccdd2e5ed00a052.ctex"]
 
 [params]
 

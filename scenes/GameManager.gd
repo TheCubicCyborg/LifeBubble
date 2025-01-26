@@ -16,6 +16,7 @@ func _ready():
 	oxygen_remaining = max_oxygen
 	oxygen_bar.min_value = 0
 	oxygen_bar.max_value = max_oxygen
+	oxygen_bar.visible = true
 	breakers.resize(num_breakers)
 	breakers.fill(false)
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://byv0krwwus0yg"
+path="res://.godot/imported/Cooridoor-Sheet (1).png-f537359e87b3ffe6e538a269ab809a38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/World/Cooridoor-Sheet (1).png"
+dest_files=["res://.godot/imported/Cooridoor-Sheet (1).png-f537359e87b3ffe6e538a269ab809a38.ctex"]
 
 [params]
 

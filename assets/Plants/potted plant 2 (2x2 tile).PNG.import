@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://bpfsabebem3xt"
+path="res://.godot/imported/potted plant 2 (2x2 tile).PNG-720f2231924c3a66dd9c023f608ebafc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Plants/potted plant 2 (2x2 tile).PNG"
+dest_files=["res://.godot/imported/potted plant 2 (2x2 tile).PNG-720f2231924c3a66dd9c023f608ebafc.ctex"]
 
 [params]
 

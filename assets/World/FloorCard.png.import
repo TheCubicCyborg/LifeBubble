@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://bj0fif1gnsvwg"
+path="res://.godot/imported/FloorCard.png-171c900ca45b0c8c2cb2db2d0ce90ce9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/World/FloorCard.png"
+dest_files=["res://.godot/imported/FloorCard.png-171c900ca45b0c8c2cb2db2d0ce90ce9.ctex"]
 
 [params]
 

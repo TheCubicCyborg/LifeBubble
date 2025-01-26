@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dafv4b8xtjlye"
-path="res://.godot/imported/lit_bulb.png-f9389e64f3d6775b048841af617cd7c2.ctex"
+path="res://.godot/imported/lit_bulb.png-c5da441371a9564743d9e83917d4dd2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/lit_bulb.png"
-dest_files=["res://.godot/imported/lit_bulb.png-f9389e64f3d6775b048841af617cd7c2.ctex"]
+source_file="res://assets/lit_bulb.png"
+dest_files=["res://.godot/imported/lit_bulb.png-c5da441371a9564743d9e83917d4dd2d.ctex"]
 
 [params]
 

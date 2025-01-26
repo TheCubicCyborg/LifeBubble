@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://cbjn7xek8q1kw"]
 
 [ext_resource type="Script" path="res://scenes/InventoryManager.gd" id="1_ngycf"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/Test Doc.png" id="2_ba1c6"]
+[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://assets/UI/Test Doc.png" id="2_ba1c6"]
 [ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_pknag"]
-[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://Assets/crowbar_inventory.png" id="3_xy7u8"]
+[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://assets/UI/crowbar_inventory.png" id="3_xy7u8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvuc1"]
 shader = ExtResource("3_pknag")
@@ -108,6 +108,7 @@ animation_player = NodePath("AnimationPlayer")
 [node name="MainInv" type="CanvasLayer" parent="."]
 
 [node name="MainInvControl" type="Control" parent="MainInv"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -151,6 +152,7 @@ scale = Vector2(6, 6)
 texture = ExtResource("2_ba1c6")
 
 [node name="NotesList" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="NotesListControl" type="Control" parent="NotesList"]
 layout_mode = 3

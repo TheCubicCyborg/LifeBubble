@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://b6j0vaps2pc8i"
+path="res://.godot/imported/sciencetable_9tile_3.png-be8fa087d60003ed5c5a5d0598127060.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Laboratory/sciencetable_9tile_3.png"
+dest_files=["res://.godot/imported/sciencetable_9tile_3.png-be8fa087d60003ed5c5a5d0598127060.ctex"]
 
 [params]
 

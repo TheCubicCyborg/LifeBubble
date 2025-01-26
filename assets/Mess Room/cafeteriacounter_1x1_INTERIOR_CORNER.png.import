@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://b4l8m8h3jlwms"
+path="res://.godot/imported/cafeteriacounter_1x1_INTERIOR_CORNER.png-60c7c65d862cf5d6dc465120e7e1f39d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Mess Room/cafeteriacounter_1x1_INTERIOR_CORNER.png"
+dest_files=["res://.godot/imported/cafeteriacounter_1x1_INTERIOR_CORNER.png-60c7c65d862cf5d6dc465120e7e1f39d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://cxe0f6qix7qdc"
+path="res://.godot/imported/crowbar_inventory.png-ca331aa21a692df887a790ee055bf718.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/UI/crowbar_inventory.png"
+dest_files=["res://.godot/imported/crowbar_inventory.png-ca331aa21a692df887a790ee055bf718.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://btpnnx0unnv1k"
+path="res://.godot/imported/bathroomstall_1x1.png-ddd9c4adf5f801af336d44c91162544a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Bathroom/bathroomstall_1x1.png"
+dest_files=["res://.godot/imported/bathroomstall_1x1.png-ddd9c4adf5f801af336d44c91162544a.ctex"]
 
 [params]
 

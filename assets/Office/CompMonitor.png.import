@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://b2dylral7j072"
+path="res://.godot/imported/CompMonitor.png-58eda1828ab80b128cd58c9a28e36937.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Office/CompMonitor.png"
+dest_files=["res://.godot/imported/CompMonitor.png-58eda1828ab80b128cd58c9a28e36937.ctex"]
 
 [params]
 

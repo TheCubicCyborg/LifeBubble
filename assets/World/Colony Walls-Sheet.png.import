@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://c8bsq6q1w75bu"
+path="res://.godot/imported/Colony Walls-Sheet.png-cc62c8bff3c5c129891e8db0379abec4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/World/Colony Walls-Sheet.png"
+dest_files=["res://.godot/imported/Colony Walls-Sheet.png-cc62c8bff3c5c129891e8db0379abec4.ctex"]
 
 [params]
 

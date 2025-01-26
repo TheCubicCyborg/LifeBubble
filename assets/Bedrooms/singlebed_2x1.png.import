@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyjuxcjcx7uaf"
-path="res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"
+uid="uid://dcldhgtj2eha0"
+path="res://.godot/imported/singlebed_2x1.png-3ea7d51c6a724542153ebcefd057a68e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unlit_bulb.png"
-dest_files=["res://.godot/imported/unlit_bulb.png-4088f336bb374af66cbb8a700842f157.ctex"]
+source_file="res://assets/Bedrooms/singlebed_2x1.png"
+dest_files=["res://.godot/imported/singlebed_2x1.png-3ea7d51c6a724542153ebcefd057a68e.ctex"]
 
 [params]
 
