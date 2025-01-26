@@ -1,64 +1,28 @@
-[gd_scene load_steps=14 format=4 uid="uid://cqdqsvya7fut0"]
+[gd_scene load_steps=15 format=4 uid="uid://cqdqsvya7fut0"]
 
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="1_xptdi"]
-[ext_resource type="TileSet" uid="uid://bukq4ngrgubs5" path="res://assets/Tileset.tres" id="2_ncnt3"]
+[ext_resource type="TileSet" uid="uid://bukq4ngrgubs5" path="res://Assets/Tileset.tres" id="2_ncnt3"]
 [ext_resource type="PackedScene" uid="uid://cbjn7xek8q1kw" path="res://scenes/inventory.tscn" id="2_pi7qv"]
 [ext_resource type="PackedScene" uid="uid://b3skv6a3ilalc" path="res://scenes/player.tscn" id="3_ojtcp"]
 [ext_resource type="PackedScene" uid="uid://dcs2cs5xju06t" path="res://scenes/sliding_door.tscn" id="5_k1tsw"]
-[ext_resource type="Texture2D" uid="uid://cnn2rrcoh0eto" path="res://assets/UI/Sample Oxygen Over.png" id="6_bpmf8"]
-[ext_resource type="PackedScene" path="res://scenes/breaker.tscn" id="6_e0nwr"]
+[ext_resource type="Texture2D" uid="uid://cnn2rrcoh0eto" path="res://Assets/UI/Sample Oxygen Over.png" id="6_bpmf8"]
+[ext_resource type="PackedScene" uid="uid://bociqhrkxg75q" path="res://scenes/breaker.tscn" id="6_e0nwr"]
 [ext_resource type="PackedScene" uid="uid://5vxxr14aeh4i" path="res://scenes/collectible.tscn" id="6_oesdd"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://assets/UI/Test Doc.png" id="7_52puu"]
-[ext_resource type="Texture2D" uid="uid://d0tgu5avsh5sb" path="res://assets/UI/Sample Oxygen Fill.png" id="7_yxj20"]
-[ext_resource type="Texture2D" uid="uid://c0lijplkycysd" path="res://assets/World/crowbar_world.png" id="8_psq32"]
+[ext_resource type="Script" path="res://scenes/fade_to_black.gd" id="7_1kx37"]
+[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/UI/Test Doc.png" id="7_52puu"]
+[ext_resource type="Texture2D" uid="uid://d0tgu5avsh5sb" path="res://Assets/UI/Sample Oxygen Fill.png" id="7_yxj20"]
+[ext_resource type="Texture2D" uid="uid://c0lijplkycysd" path="res://Assets/World/crowbar_world.png" id="8_psq32"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gaae2"]
 radius = 192.0
 
-[sub_resource type="Animation" id="Animation_kle6h"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="Animation" id="Animation_wcmd2"]
-resource_name = "bubbling"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_5g6pc"]
-_data = {
-"RESET": SubResource("Animation_kle6h"),
-"bubbling": SubResource("Animation_wcmd2")
-}
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ypxsb"]
 
-
-[node name="GameManager" type="Node2D"]
+[node name="GameManager" type="Node2D" node_paths=PackedStringArray("my_dude")]
 script = ExtResource("1_xptdi")
-max_oxygen = 15.0
+max_oxygen = 5.0
 refill_speed = 1.0
+my_dude = NodePath("CanvasLayer/FadingRect")
 
 [node name="Inventory" parent="." instance=ExtResource("2_pi7qv")]
 
@@ -117,6 +81,12 @@ offset_left = 626.0
 offset_top = 21.0
 offset_right = 666.0
 offset_bottom = 44.0
+
+[node name="FadingRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1975.0
+offset_bottom = 1128.0
+color = Color(0, 0, 0, 0)
+script = ExtResource("7_1kx37")
 
 [node name="SlidingDoor" parent="." instance=ExtResource("5_k1tsw")]
 position = Vector2(-1, 246)
