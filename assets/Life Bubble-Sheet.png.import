@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bacgu0daarp20"
-path="res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"
+uid="uid://br1fenl4rl7yk"
+path="res://.godot/imported/Life Bubble-Sheet.png-ee3b68a1408669d1ce1af2668c9bcdec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Circle_(transparent).png"
-dest_files=["res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"]
+source_file="res://assets/Life Bubble-Sheet.png"
+dest_files=["res://.godot/imported/Life Bubble-Sheet.png-ee3b68a1408669d1ce1af2668c9bcdec.ctex"]
 
 [params]
 

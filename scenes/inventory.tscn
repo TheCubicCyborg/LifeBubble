@@ -1,14 +1,14 @@
 [gd_scene load_steps=11 format=3 uid="uid://cbjn7xek8q1kw"]
 
 [ext_resource type="Script" path="res://scenes/InventoryManager.gd" id="1_ngycf"]
-[ext_resource type="Texture2D" uid="uid://c0lijplkycysd" path="res://Assets/chro barre.png" id="2_3eqfn"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/Test Doc.png" id="2_ba1c6"]
+[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://assets/Test Doc.png" id="2_ba1c6"]
 [ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_pknag"]
+[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://assets/crowbar_inventory.png" id="3_xy7u8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvuc1"]
 shader = ExtResource("3_pknag")
 shader_parameter/color = Color(0, 0, 0, 1)
-shader_parameter/width = 0.25
+shader_parameter/width = 1.0
 shader_parameter/pattern = 0
 shader_parameter/inside = false
 shader_parameter/add_margins = true
@@ -28,6 +28,33 @@ shader_parameter/width = 0.25
 shader_parameter/pattern = 0
 shader_parameter/inside = false
 shader_parameter/add_margins = true
+
+[sub_resource type="Animation" id="Animation_70dpo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainInv/MainInvControl:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NotesList/NotesListControl:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 1080)]
+}
 
 [sub_resource type="Animation" id="Animation_mulki"]
 resource_name = "notes_in"
@@ -55,33 +82,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0, 1080), Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_70dpo"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MainInv/MainInvControl:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("NotesList/NotesListControl:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 1080)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hkox4"]
@@ -118,18 +118,20 @@ grow_vertical = 2
 [node name="Crowbar" type="TextureRect" parent="MainInv/MainInvControl"]
 texture_filter = 1
 material = SubResource("ShaderMaterial_kvuc1")
-offset_left = 299.0
-offset_top = 548.0
-offset_right = 331.0
-offset_bottom = 564.0
+layout_mode = 0
+offset_left = 107.0
+offset_top = 893.0
+offset_right = 188.0
+offset_bottom = 942.0
 rotation = 4.71239
-scale = Vector2(30, 30)
+scale = Vector2(15, 15)
 pivot_offset = Vector2(16, 8)
-texture = ExtResource("2_3eqfn")
+texture = ExtResource("3_xy7u8")
 
 [node name="Keycard" type="TextureRect" parent="MainInv/MainInvControl"]
 texture_filter = 1
 material = SubResource("ShaderMaterial_h21u2")
+layout_mode = 0
 offset_left = 763.0
 offset_top = 38.0
 offset_right = 828.0
@@ -140,6 +142,7 @@ texture = ExtResource("2_ba1c6")
 [node name="Notes" type="TextureRect" parent="MainInv/MainInvControl"]
 texture_filter = 1
 material = SubResource("ShaderMaterial_w155s")
+layout_mode = 0
 offset_left = 1136.0
 offset_top = 553.0
 offset_right = 1201.0

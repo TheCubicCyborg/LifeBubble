@@ -65,6 +65,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("_collision_shape", "_animator")]
+z_index = 1
 texture_filter = 1
 script = ExtResource("1_8y82w")
 _player_speed = 50.0

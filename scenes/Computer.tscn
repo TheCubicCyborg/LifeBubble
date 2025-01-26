@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://2ok4n7va58cj"]
+
+[ext_resource type="Script" path="res://scenes/computer.gd" id="1_kuvip"]
+[ext_resource type="PackedScene" uid="uid://b2dltestaiphn" path="res://scenes/password_puzzle.tscn" id="2_e5fbe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wo0e4"]
+size = Vector2(32, 53)
+
+[node name="Computer" type="Area2D"]
+script = ExtResource("1_kuvip")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10.5)
+shape = SubResource("RectangleShape2D_wo0e4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PasswordPuzzle" parent="CanvasLayer" instance=ExtResource("2_e5fbe")]
+offset_top = 10.5
+offset_bottom = 10.5

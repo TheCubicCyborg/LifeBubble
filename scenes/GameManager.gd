@@ -31,8 +31,6 @@ func _process(delta):
 			oxygen_remaining = 0
 	if oxygen_remaining <= 0:
 		die()
-	if(Input.is_action_just_pressed("Test")):
-		oxygen_remaining = 5
 	oxygen_bar.value = oxygen_remaining
 	oxygen_timer_label.text = str(int(oxygen_remaining)) +  "s"
 
@@ -52,3 +50,6 @@ func refill_oxygen(delta):
 
 func die():
 	print("die!")
+
+func openLaboratory():
+	print("laboratory opened")

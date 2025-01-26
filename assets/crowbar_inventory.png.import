@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bacgu0daarp20"
-path="res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"
+uid="uid://cxe0f6qix7qdc"
+path="res://.godot/imported/crowbar_inventory.png-2886a383827499218345e4b2c52b220b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Circle_(transparent).png"
-dest_files=["res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"]
+source_file="res://assets/crowbar_inventory.png"
+dest_files=["res://.godot/imported/crowbar_inventory.png-2886a383827499218345e4b2c52b220b.ctex"]
 
 [params]
 

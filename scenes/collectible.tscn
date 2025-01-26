@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://5vxxr14aeh4i"]
+
+[ext_resource type="Script" path="res://keycard.gd" id="1_lpjhp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgpdt"]
+size = Vector2(24, 19)
+
+[node name="Collectible" type="Area2D"]
+script = ExtResource("1_lpjhp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bgpdt")

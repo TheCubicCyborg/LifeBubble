@@ -56,3 +56,6 @@ func _physics_process(delta: float) -> void:
 		_animator.play("walk")
 	
 	move_and_slide()
+
+func set_accepting_input(accepting):
+	accepting_input = accepting

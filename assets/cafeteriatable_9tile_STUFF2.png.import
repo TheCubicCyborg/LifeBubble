@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bacgu0daarp20"
-path="res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"
+uid="uid://w5l80mimnn11"
+path="res://.godot/imported/cafeteriatable_9tile_STUFF2.png-3620e8b8eb3c03a6abb255fddd2ce2b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Circle_(transparent).png"
-dest_files=["res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"]
+source_file="res://assets/cafeteriatable_9tile_STUFF2.png"
+dest_files=["res://.godot/imported/cafeteriatable_9tile_STUFF2.png-3620e8b8eb3c03a6abb255fddd2ce2b6.ctex"]
 
 [params]
 

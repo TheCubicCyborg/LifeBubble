@@ -3,14 +3,16 @@ extends StaticBody2D
 
 @onready var door_collider : CollisionShape2D = $DoorCollider
 @export var slide_door_anim : AnimationPlayer
+@export var locked: bool = true
+@export var keycardRequired: bool = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _ready() -> void:
 	door_collider.disabled = false
 	slide_door_anim.play('RESET')
-	
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if not body is PlayerController:
+	if locked or not body is PlayerController:
 		return
 	#door_collider.disabled = true
 	#if slide_door_anim.is_playing():
@@ -34,4 +36,11 @@ func disable_collider():
 
 func enable_collider():
 	door_collider.disabled = false
-	
+
+func unlock_door():
+	if locked:
+		if keycardRequired:
+			if Globals.InventoryManager.found["keycard"]:
+				locked = false
+		else:
+			locked = false

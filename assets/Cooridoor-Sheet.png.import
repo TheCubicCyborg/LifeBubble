@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0lijplkycysd"
-path="res://.godot/imported/chro barre.png-93171367fa4e5722df299982db1df303.ctex"
+uid="uid://cq7fyinhpklur"
+path="res://.godot/imported/Cooridoor-Sheet.png-ffe420118ff18176d4e2897bfd12e175.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/chro barre.png"
-dest_files=["res://.godot/imported/chro barre.png-93171367fa4e5722df299982db1df303.ctex"]
+source_file="res://assets/Cooridoor-Sheet.png"
+dest_files=["res://.godot/imported/Cooridoor-Sheet.png-ffe420118ff18176d4e2897bfd12e175.ctex"]
 
 [params]
 

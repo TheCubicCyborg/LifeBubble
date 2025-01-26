@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bacgu0daarp20"
-path="res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"
+uid="uid://dib3vtbrrcm2n"
+path="res://.godot/imported/Storage Shelf-Sheet.png-6c3852ea67e9d6ea0755a07f23a09ac3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Circle_(transparent).png"
-dest_files=["res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"]
+source_file="res://assets/Storage Shelf-Sheet.png"
+dest_files=["res://.godot/imported/Storage Shelf-Sheet.png-6c3852ea67e9d6ea0755a07f23a09ac3.ctex"]
 
 [params]
 
