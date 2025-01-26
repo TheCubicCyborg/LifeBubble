@@ -9,12 +9,18 @@ var item_moves = [
 ]
 var item_outlines
 
+#@export var main_inv : CanvasLayer
+#@export var notes_list : CanvasLayer
+
+@export var animation_player : AnimationPlayer
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	populate_found()
 	selected = Vector2(0,0)
 	set_outline(arr_vect2(item_moves, selected))
 	Globals.InventoryManager = self
+	animation_player.play("RESET")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -29,13 +35,16 @@ func _process(delta):
 	elif Input.is_action_just_pressed("move_down") and selected.y != len(item_moves[selected.x]) -1 : 
 		selected.y += 1
 		inputted = true
-	elif Input.is_action_just_pressed("move_left") and selected. x != 0 : 
+	elif Input.is_action_just_pressed("move_left") and selected.x != 0 : 
 		selected.x -= 1
 		selected.y = 0
 		inputted = true
 	if inputted:
 		print(arr_vect2(item_moves, selected))
 		set_outline(arr_vect2(item_moves, selected))
+	else:
+		if Input.is_action_just_pressed("interact") and arr_vect2(item_moves, selected) == 'notes':
+			bring_up_notes()
 			
 func set_outline(select:String):
 	for key in item_textures:
@@ -50,3 +59,6 @@ func arr_vect2(arr:Array,vect2:Vector2):
 func populate_found():
 	for item in item_textures:
 		found[item] = false
+
+func bring_up_notes():
+	animation_player.play('notes_in')
