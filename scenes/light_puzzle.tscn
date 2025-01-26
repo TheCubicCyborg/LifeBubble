@@ -1,0 +1,198 @@
+[gd_scene load_steps=12 format=3 uid="uid://sq8ukcdvu0xc"]
+
+[ext_resource type="Script" path="res://scenes/light_puzzle.gd" id="1_l8u4m"]
+[ext_resource type="Texture2D" uid="uid://dafv4b8xtjlye" path="res://Assets/lit_bulb.png" id="1_p8kp7"]
+[ext_resource type="Texture2D" uid="uid://cx5iuc1ehf8pq" path="res://Assets/button_temp.png" id="2_7mso5"]
+[ext_resource type="Texture2D" uid="uid://dyjuxcjcx7uaf" path="res://Assets/unlit_bulb.png" id="2_ecl2c"]
+[ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_cyog7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pvlew"]
+shader = ExtResource("3_cyog7")
+shader_parameter/color = Color(0.270588, 1, 0.321569, 1)
+shader_parameter/width = 1.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cthe5"]
+shader = ExtResource("3_cyog7")
+shader_parameter/color = Color(0.270588, 1, 0.321569, 1)
+shader_parameter/width = 1.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r2j70"]
+shader = ExtResource("3_cyog7")
+shader_parameter/color = Color(0.270588, 1, 0.321569, 1)
+shader_parameter/width = 1.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[sub_resource type="Animation" id="Animation_yihh5"]
+resource_name = "FlyOut"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -1080)]
+}
+
+[sub_resource type="Animation" id="Animation_48i3b"]
+resource_name = "RESET"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_em4ic"]
+_data = {
+"FlyOut": SubResource("Animation_yihh5"),
+"RESET": SubResource("Animation_48i3b")
+}
+
+[node name="LightPuzzle" type="Control" node_paths=PackedStringArray("buttons", "bulbs", "animation_player")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l8u4m")
+buttons = [NodePath("Buttons/Top"), NodePath("Buttons/Mid"), NodePath("Buttons/Bot")]
+bulbs = [NodePath("LightBulbs/Top"), NodePath("LightBulbs/Mid"), NodePath("LightBulbs/Bot")]
+unlit_texture = ExtResource("2_ecl2c")
+lit_texture = ExtResource("1_p8kp7")
+animation_player = NodePath("AnimationPlayer")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.716296, 0.716296, 0.716296, 1)
+
+[node name="LightBulbs" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Top" type="TextureRect" parent="LightBulbs"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1460.0
+offset_top = 100.0
+offset_right = 1492.0
+offset_bottom = 132.0
+grow_horizontal = 0
+scale = Vector2(7, 7)
+texture = ExtResource("2_ecl2c")
+
+[node name="Mid" type="TextureRect" parent="LightBulbs"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 1460.0
+offset_top = 380.0
+offset_right = 1492.0
+offset_bottom = 412.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(7, 7)
+texture = ExtResource("2_ecl2c")
+
+[node name="Bot" type="TextureRect" parent="LightBulbs"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1460.0
+offset_top = 660.0
+offset_right = 1492.0
+offset_bottom = 692.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(7, 7)
+texture = ExtResource("2_ecl2c")
+
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Top" type="TextureRect" parent="Buttons"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_pvlew")
+layout_mode = 1
+offset_left = 200.0
+offset_top = 100.0
+offset_right = 240.0
+offset_bottom = 140.0
+scale = Vector2(7, 7)
+texture = ExtResource("2_7mso5")
+
+[node name="Mid" type="TextureRect" parent="Buttons"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cthe5")
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 380.0
+offset_right = 240.0
+offset_bottom = 420.0
+grow_vertical = 2
+scale = Vector2(7, 7)
+texture = ExtResource("2_7mso5")
+
+[node name="Bot" type="TextureRect" parent="Buttons"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_r2j70")
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 200.0
+offset_top = 660.0
+offset_right = 240.0
+offset_bottom = 700.0
+grow_vertical = 0
+scale = Vector2(7, 7)
+texture = ExtResource("2_7mso5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_em4ic")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
