@@ -1,22 +1,64 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcs2cs5xju06t"]
+[gd_scene load_steps=9 format=3 uid="uid://dcs2cs5xju06t"]
 
-[ext_resource type="Texture2D" uid="uid://bvgwxojp3maug" path="res://icon.svg" id="1_0lga2"]
 [ext_resource type="Script" path="res://scenes/sliding_door.gd" id="1_nre1q"]
+[ext_resource type="Texture2D" uid="uid://byv0krwwus0yg" path="res://Assets/Cooridoor-Sheet (1).png" id="2_mppm8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aw3fi"]
+size = Vector2(64, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b6v5x"]
 radius = 29.75
 
-[sub_resource type="Animation" id="Animation_mc0ar"]
-resource_name = "open"
-
 [sub_resource type="Animation" id="Animation_6y6fh"]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_mc0ar"]
+resource_name = "open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_0llod"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [4, 3, 2, 1, 0]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_edd6h"]
 _data = {
 "RESET": SubResource("Animation_6y6fh"),
+"close": SubResource("Animation_0llod"),
 "open": SubResource("Animation_mc0ar")
 }
 
@@ -28,8 +70,10 @@ slide_door_anim = NodePath("AnimationPlayer")
 shape = SubResource("RectangleShape2D_aw3fi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.155, 0.155)
-texture = ExtResource("1_0lga2")
+texture_filter = 1
+texture = ExtResource("2_mppm8")
+hframes = 3
+vframes = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 

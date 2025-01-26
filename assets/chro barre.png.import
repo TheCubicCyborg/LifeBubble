@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0lijplkycysd"
-path="res://.godot/imported/chro barre.png-ed4faf7a64889007f164c118d0060e5e.ctex"
+path="res://.godot/imported/chro barre.png-93171367fa4e5722df299982db1df303.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/chro barre.png"
-dest_files=["res://.godot/imported/chro barre.png-ed4faf7a64889007f164c118d0060e5e.ctex"]
+source_file="res://Assets/chro barre.png"
+dest_files=["res://.godot/imported/chro barre.png-93171367fa4e5722df299982db1df303.ctex"]
 
 [params]
 
