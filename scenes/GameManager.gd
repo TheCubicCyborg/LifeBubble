@@ -7,7 +7,8 @@ var refill_counter: int = 1
 @export var refill_speed: float = 10
 @onready var oxygen_bar = $CanvasLayer/ProgressBar
 @onready var oxygen_timer_label = $CanvasLayer/Label
-
+@export var num_breakers = 10
+var breakers : Array[bool]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +16,8 @@ func _ready():
 	oxygen_remaining = max_oxygen
 	oxygen_bar.min_value = 0
 	oxygen_bar.max_value = max_oxygen
-
+	breakers.resize(num_breakers)
+	breakers.fill(false)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

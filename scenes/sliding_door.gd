@@ -9,9 +9,6 @@ func _ready() -> void:
 	door_collider.disabled = false
 	slide_door_anim.play('RESET')
 	
-func _process(delta: float) -> void:
-	print("DISABLED = ", door_collider.disabled)
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if not body is PlayerController:
 		return
