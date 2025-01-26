@@ -5,6 +5,7 @@ class_name PlayerController
 @export var _player_speed : float = 10.0
 @export var _input_smoothing_factor : float = 1.0
 @export var _rotation_smoothing_factor : float = 1.0
+@export var _stop_threshold : float = 1.0
 @export var _default_facing_dir := Vector2.ZERO
 
 @onready var _input : Vector2 = Vector2.ZERO
@@ -16,6 +17,7 @@ class_name PlayerController
 
 @export_group("children")
 @export var _collision_shape : CollisionShape2D
+@export var _animator : AnimationPlayer
 
 func _ready() -> void:
 	# TODO assign a player variable in globals
@@ -46,5 +48,11 @@ func _physics_process(delta: float) -> void:
 		
 	else:
 		velocity = velocity.lerp(Vector2.ZERO, delta * _input_smoothing_factor)
+	
+	if velocity.length() < _stop_threshold:
+		_animator.stop()
+		_animator.queue("idle")
+	else:
+		_animator.play("walk")
 	
 	move_and_slide()
