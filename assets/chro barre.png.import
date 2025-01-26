@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bacgu0daarp20"
-path="res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"
+uid="uid://c0lijplkycysd"
+path="res://.godot/imported/chro barre.png-ed4faf7a64889007f164c118d0060e5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Circle_(transparent).png"
-dest_files=["res://.godot/imported/Circle_(transparent).png-9579c56437220426e48ffaa4780db8b7.ctex"]
+source_file="res://assets/chro barre.png"
+dest_files=["res://.godot/imported/chro barre.png-ed4faf7a64889007f164c118d0060e5e.ctex"]
 
 [params]
 

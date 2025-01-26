@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dvofgi5kmkedc"]
+
+[ext_resource type="Shader" path="res://assets/outline.gdshader" id="1_vmj5k"]
+
+[resource]
+shader = ExtResource("1_vmj5k")
+shader_parameter/width = 0
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = null
+shader_parameter/minimal_flickering_alpha = null

@@ -1,7 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbjn7xek8q1kw"]
+[gd_scene load_steps=8 format=3 uid="uid://cbjn7xek8q1kw"]
 
 [ext_resource type="Script" path="res://scenes/InventoryManager.gd" id="1_ngycf"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/Test Doc.png" id="2_ba1c6"]
+[ext_resource type="Texture2D" uid="uid://c0lijplkycysd" path="res://assets/chro barre.png" id="2_3eqfn"]
+[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://assets/Test Doc.png" id="2_ba1c6"]
+[ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_pknag"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvuc1"]
+shader = ExtResource("3_pknag")
+shader_parameter/width = null
+shader_parameter/outline_color = null
+shader_parameter/flickering_speed = null
+shader_parameter/minimal_flickering_alpha = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h21u2"]
+shader = ExtResource("3_pknag")
+shader_parameter/width = 0
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = null
+shader_parameter/minimal_flickering_alpha = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w155s"]
+shader = ExtResource("3_pknag")
+shader_parameter/width = 0
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = null
+shader_parameter/minimal_flickering_alpha = null
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
@@ -11,10 +34,42 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ngycf")
+item_textures = {
+"crowbar": NodePath("CanvasLayer/Crowbar"),
+"keycard": NodePath("CanvasLayer/Keycard"),
+"notes": NodePath("CanvasLayer/Notes")
+}
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Crowbar" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_kvuc1")
+offset_left = 299.0
+offset_top = 548.0
+offset_right = 331.0
+offset_bottom = 564.0
+rotation = 4.71239
+scale = Vector2(30, 30)
+pivot_offset = Vector2(16, 8)
+texture = ExtResource("2_3eqfn")
+
+[node name="Keycard" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_h21u2")
+offset_left = 763.0
+offset_top = 38.0
+offset_right = 828.0
+offset_bottom = 122.0
+scale = Vector2(6, 6)
+texture = ExtResource("2_ba1c6")
+
+[node name="Notes" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_w155s")
+offset_left = 1136.0
+offset_top = 553.0
+offset_right = 1201.0
+offset_bottom = 637.0
+scale = Vector2(6, 6)
 texture = ExtResource("2_ba1c6")
