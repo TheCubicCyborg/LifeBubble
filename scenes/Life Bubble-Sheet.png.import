@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8bsq6q1w75bu"
-path="res://.godot/imported/Colony Walls-Sheet.png-5a9e4e26e6fa71655207625df38b5351.ctex"
+uid="uid://blutuu2xgi7mf"
+path="res://.godot/imported/Life Bubble-Sheet.png-ba20d5b5010521f5a5475185699a0d31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Colony Walls-Sheet.png"
-dest_files=["res://.godot/imported/Colony Walls-Sheet.png-5a9e4e26e6fa71655207625df38b5351.ctex"]
+source_file="res://scenes/Life Bubble-Sheet.png"
+dest_files=["res://.godot/imported/Life Bubble-Sheet.png-ba20d5b5010521f5a5475185699a0d31.ctex"]
 
 [params]
 

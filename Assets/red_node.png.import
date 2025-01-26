@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8bsq6q1w75bu"
-path="res://.godot/imported/Colony Walls-Sheet.png-5a9e4e26e6fa71655207625df38b5351.ctex"
+uid="uid://by58cd3i5gucu"
+path="res://.godot/imported/red_node.png-db1225dc81c098f4503cc0fbafd52ef7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Colony Walls-Sheet.png"
-dest_files=["res://.godot/imported/Colony Walls-Sheet.png-5a9e4e26e6fa71655207625df38b5351.ctex"]
+source_file="res://Assets/red_node.png"
+dest_files=["res://.godot/imported/red_node.png-db1225dc81c098f4503cc0fbafd52ef7.ctex"]
 
 [params]
 

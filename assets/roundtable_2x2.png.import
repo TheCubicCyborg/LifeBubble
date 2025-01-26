@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdonp42bb34k1"
-path="res://.godot/imported/roundtable_2x2.png-4e7c52ea64a02431dbce2e20687f0de2.ctex"
+path="res://.godot/imported/roundtable_2x2.png-45e16c820772ece32f5a562a754c2e3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/roundtable_2x2.png"
-dest_files=["res://.godot/imported/roundtable_2x2.png-4e7c52ea64a02431dbce2e20687f0de2.ctex"]
+source_file="res://Assets/roundtable_2x2.png"
+dest_files=["res://.godot/imported/roundtable_2x2.png-45e16c820772ece32f5a562a754c2e3e.ctex"]
 
 [params]
 

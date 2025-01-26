@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dib3vtbrrcm2n"
-path="res://.godot/imported/Storage Shelf-Sheet.png-6c3852ea67e9d6ea0755a07f23a09ac3.ctex"
+path="res://.godot/imported/Storage Shelf-Sheet.png-e2f9037968fa92c7410b38d31b58b296.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Storage Shelf-Sheet.png"
-dest_files=["res://.godot/imported/Storage Shelf-Sheet.png-6c3852ea67e9d6ea0755a07f23a09ac3.ctex"]
+source_file="res://Assets/Storage Shelf-Sheet.png"
+dest_files=["res://.godot/imported/Storage Shelf-Sheet.png-e2f9037968fa92c7410b38d31b58b296.ctex"]
 
 [params]
 
