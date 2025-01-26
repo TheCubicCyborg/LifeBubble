@@ -37,6 +37,7 @@ func _process(delta):
 func enter_bubble(body:Node2D):
 	in_bubble = true
 
+
 func exit_bubble(body:Node2D):
 	in_bubble = false
 	refill_counter = 1

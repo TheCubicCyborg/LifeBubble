@@ -10,8 +10,8 @@ radius = 8.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_feju6"]
 size = Vector2(16, 32)
 
-[sub_resource type="Animation" id="Animation_5uuk7"]
-resource_name = "idle"
+[sub_resource type="Animation" id="Animation_iouf0"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -25,8 +25,8 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_iouf0"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_5uuk7"]
+resource_name = "idle"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
