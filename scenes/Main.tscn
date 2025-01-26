@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://cqdqsvya7fut0"]
+[gd_scene load_steps=7 format=4 uid="uid://cqdqsvya7fut0"]
 
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="1_xptdi"]
-[ext_resource type="TileSet" uid="uid://bukq4ngrgubs5" path="res://assets/Tileset.tres" id="2_ncnt3"]
+[ext_resource type="TileSet" uid="uid://b2l3e2u0yfr0w" path="res://assets/Tileset.tres" id="2_ncnt3"]
 [ext_resource type="PackedScene" uid="uid://b3skv6a3ilalc" path="res://scenes/player.tscn" id="3_ojtcp"]
-[ext_resource type="Texture2D" uid="uid://bacgu0daarp20" path="res://assets/Circle_(transparent).png" id="3_ujfqj"]
+[ext_resource type="Texture2D" uid="uid://bacgu0daarp20" path="res://Assets/Circle_(transparent).png" id="3_ujfqj"]
+[ext_resource type="PackedScene" uid="uid://dcs2cs5xju06t" path="res://scenes/sliding_door.tscn" id="5_k1tsw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gaae2"]
 radius = 192.0
@@ -57,6 +58,9 @@ offset_left = 626.0
 offset_top = 21.0
 offset_right = 666.0
 offset_bottom = 44.0
+
+[node name="SlidingDoor" parent="." instance=ExtResource("5_k1tsw")]
+position = Vector2(-1, 246)
 
 [connection signal="body_entered" from="Bubble" to="." method="enter_bubble"]
 [connection signal="body_exited" from="Bubble" to="." method="exit_bubble"]

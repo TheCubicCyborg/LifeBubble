@@ -1,23 +1,40 @@
-extends Area2D
+extends StaticBody2D
 
 
-@export var door_collider : CollisionShape2D
+@onready var door_collider : CollisionShape2D = $DoorCollider
 @export var slide_door_anim : AnimationPlayer
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _ready() -> void:
 	door_collider.disabled = false
-
+	slide_door_anim.play('RESET')
+	
+func _process(delta: float) -> void:
+	print("DISABLED = ", door_collider.disabled)
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if slide_door_anim.is_playing():
+	if not body is PlayerController:
 		return
+	#door_collider.disabled = true
+	#if slide_door_anim.is_playing():
+		#return
 	slide_door_anim.play("open")
-	door_collider.disabled = true
-
+	await slide_door_anim.animation_finished
+	disable_collider()
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
-	if slide_door_anim.is_playing():
+	if not body is PlayerController:
 		return
+	#door_collider.disabled = false
+	#if slide_door_anim.is_playing():
+		#return
 	slide_door_anim.play("close")
+	await slide_door_anim.animation_finished
+	enable_collider()
+
+func disable_collider():
+	door_collider.disabled = true
+
+func enable_collider():
 	door_collider.disabled = false
+	
