@@ -46,6 +46,10 @@ func _process(delta):
 	elif accepting_input and Input.is_action_just_pressed("inventory"):
 		close_inventory()
 	if accepting_input:
+		if num_of_notes() > 0:
+			get_node(item_textures["notes"]).visible = true
+		else:
+			get_node(item_textures["notes"]).visible = false
 		var note_count = num_of_notes()
 		if note_count > 0:
 			%FocusPos.visible = true
@@ -59,9 +63,9 @@ func _process(delta):
 				return
 			elif Input.is_action_just_pressed("interact"):
 				pull_up_note(selected_note)
-			elif Input.is_action_just_pressed("move_left"):
-				selected_note = wrapi(selected_note + 1, 0, 5)
 			elif Input.is_action_just_pressed("move_right"):
+				selected_note = wrapi(selected_note + 1, 0, 5)
+			elif Input.is_action_just_pressed("move_left"):
 				selected_note = wrapi(selected_note - 1, 0, 5)
 			display_notes()
 			return
@@ -86,6 +90,7 @@ func _process(delta):
 		else:
 			if Input.is_action_just_pressed("interact") and arr_vect2(item_moves, selected) == 'notes' and num_of_notes() > 0:
 				bring_up_notes()
+				display_notes()
 
 func pull_up_note(note_index: int) -> void:
 	print("SELECT: ", selected_note)

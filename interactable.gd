@@ -5,4 +5,6 @@ class_name Interactable
 
 func interact():
 	print("INTERACT WITH BREAKER ", breaker_id)
+	if breaker_id == -1:
+		return
 	Globals.GameManager.breakers[breaker_id] = true
