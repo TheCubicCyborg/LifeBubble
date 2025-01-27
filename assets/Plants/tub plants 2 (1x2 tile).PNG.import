@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br6vyubt0eupc"
-path="res://.godot/imported/tub plants 2 (1x2 tile).PNG-2643b00373b02866084eed3adff6e771.ctex"
+path="res://.godot/imported/tub plants 2 (1x2 tile).PNG-dc63fe9b7859ada347d352bb4a58765f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/tub plants 2 (1x2 tile).PNG"
-dest_files=["res://.godot/imported/tub plants 2 (1x2 tile).PNG-2643b00373b02866084eed3adff6e771.ctex"]
+source_file="res://Assets/Plants/tub plants 2 (1x2 tile).PNG"
+dest_files=["res://.godot/imported/tub plants 2 (1x2 tile).PNG-dc63fe9b7859ada347d352bb4a58765f.ctex"]
 
 [params]
 

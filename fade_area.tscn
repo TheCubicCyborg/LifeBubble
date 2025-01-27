@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://du4epyap1jsq5"]
+
+[ext_resource type="Script" path="res://fade_area.gd" id="1_a63tg"]
+
+[node name="Node2D" type="Area2D"]
+script = ExtResource("1_a63tg")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dho186c3m0b82"
-path="res://.godot/imported/Cracked Wal.png-ff2734b95ecf5c9465457c3e3ce2b962.ctex"
+path="res://.godot/imported/Cracked Wal.png-5af35be4e769833ceb38f4a45d7b98ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Cracked Wal.png"
-dest_files=["res://.godot/imported/Cracked Wal.png-ff2734b95ecf5c9465457c3e3ce2b962.ctex"]
+source_file="res://Assets/World/Cracked Wal.png"
+dest_files=["res://.godot/imported/Cracked Wal.png-5af35be4e769833ceb38f4a45d7b98ce.ctex"]
 
 [params]
 

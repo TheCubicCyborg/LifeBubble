@@ -25,7 +25,6 @@ func get_closest_interactable(areas):
 		return areas[dists.find(min_dist)]	# sorry
 
 
-
 func get_interactables(areas):
 	var interactables := []
 	for area in areas:

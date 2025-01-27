@@ -8,7 +8,6 @@ signal finished_fading
 
 func _ready() -> void:
 	color = Color(0, 0, 0, 0)
-	print("my_color: ", color.a)
 	if start_black:
 		color.a = 1.0
 

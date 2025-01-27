@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bj0fif1gnsvwg"
-path="res://.godot/imported/FloorCard.png-b47fb2afa3da98e86d9938a6a5f6e8d7.ctex"
+uid="uid://whvek8ed4idw"
+path="res://.godot/imported/circle.png-c4157733c2ad3470a49e52db87e6ad2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/FloorCard.png"
-dest_files=["res://.godot/imported/FloorCard.png-b47fb2afa3da98e86d9938a6a5f6e8d7.ctex"]
+source_file="res://Assets/circle.png"
+dest_files=["res://.godot/imported/circle.png-c4157733c2ad3470a49e52db87e6ad2d.ctex"]
 
 [params]
 

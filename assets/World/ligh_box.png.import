@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cih1k5j8ddw3s"
-path="res://.godot/imported/ligh_box.png-0a8c8309bec3e1f4ea410003b6c57a43.ctex"
+path="res://.godot/imported/ligh_box.png-ab4e00a74f28a85f9ce6f06caad92aa5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/ligh_box.png"
-dest_files=["res://.godot/imported/ligh_box.png-0a8c8309bec3e1f4ea410003b6c57a43.ctex"]
+source_file="res://Assets/World/ligh_box.png"
+dest_files=["res://.godot/imported/ligh_box.png-ab4e00a74f28a85f9ce6f06caad92aa5.ctex"]
 
 [params]
 
