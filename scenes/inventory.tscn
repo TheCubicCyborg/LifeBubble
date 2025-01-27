@@ -148,6 +148,7 @@ note_textures = Array[Texture]([ExtResource("2_kvvhq"), ExtResource("3_o7g5u"), 
 blank_texture = ExtResource("4_gh702")
 
 [node name="MainInv" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="MainInvControl" type="Control" parent="MainInv"]
 layout_mode = 3
@@ -201,6 +202,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.101961)
 
 [node name="NotesList" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="NotesListControl" type="Control" parent="NotesList"]
 layout_mode = 3

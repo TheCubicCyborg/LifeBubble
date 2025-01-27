@@ -1,50 +1,52 @@
-[gd_resource type="TileSet" load_steps=91 format=3 uid="uid://bukq4ngrgubs5"]
+[gd_resource type="TileSet" load_steps=95 format=3 uid="uid://bukq4ngrgubs5"]
 
-[ext_resource type="Texture2D" uid="uid://mf0wg6xryj8" path="res://Assets/World/Colony Floor Green.png" id="1_wd48g"]
-[ext_resource type="Texture2D" uid="uid://dn245ywu7s47v" path="res://Assets/devArtTiles.png" id="2_ijd5e"]
-[ext_resource type="Texture2D" uid="uid://gq0b12uk3kbl" path="res://Assets/World/Desert floor.png" id="2_rc51g"]
-[ext_resource type="Texture2D" uid="uid://c8oxpyminxi0" path="res://Assets/Bedrooms/doublebed_2x2.png" id="3_ssmip"]
-[ext_resource type="Texture2D" uid="uid://dg4euhm3h8vk" path="res://Assets/Bedrooms/locker (1x1).png" id="4_6pnwg"]
-[ext_resource type="Texture2D" uid="uid://dt1nu77stwtlg" path="res://Assets/Bedrooms/locker opened (1 x 2).png" id="5_xtmiu"]
-[ext_resource type="Texture2D" uid="uid://cdonp42bb34k1" path="res://Assets/Bedrooms/roundtable_2x2.png" id="6_ffm8y"]
-[ext_resource type="Texture2D" uid="uid://dcldhgtj2eha0" path="res://Assets/Bedrooms/singlebed_2x1.png" id="7_fskse"]
-[ext_resource type="Texture2D" uid="uid://b7grt35xfflgf" path="res://Assets/Bathroom/bathroomstall_2x1_OPEN.png" id="8_n61bd"]
-[ext_resource type="Texture2D" uid="uid://ded7njgwewdlx" path="res://Assets/Bathroom/tile000.png" id="9_0x22g"]
-[ext_resource type="Texture2D" uid="uid://tpl68sd20v1m" path="res://Assets/Plants/tile001.png" id="9_37uka"]
-[ext_resource type="Texture2D" uid="uid://cufdsebclav5n" path="res://Assets/Plants/tile002.png" id="10_r10l3"]
-[ext_resource type="Texture2D" uid="uid://buegtdqa6gxak" path="res://Assets/Mess Room/cafeteriatable_9tile_BLANK.png" id="11_n4wym"]
-[ext_resource type="Texture2D" uid="uid://b70pof417ryix" path="res://Assets/Mess Room/cafeteriatable_9tile_STUFF1.png" id="12_by7ij"]
-[ext_resource type="Texture2D" uid="uid://c0kjuowtldpvr" path="res://Assets/Bathroom/shower (2x2 tile).PNG" id="13_epm42"]
-[ext_resource type="Texture2D" uid="uid://w5l80mimnn11" path="res://Assets/Mess Room/cafeteriatable_9tile_STUFF2.png" id="13_qo4gw"]
-[ext_resource type="Texture2D" uid="uid://c5vnjatsmei1b" path="res://Assets/Laboratory/sciencecabinet_1x1.png" id="14_0tq8b"]
-[ext_resource type="Texture2D" uid="uid://dqepjkjxp0u1x" path="res://Assets/Laboratory/sciencetable_9tile_1.png" id="15_mtysj"]
-[ext_resource type="Texture2D" uid="uid://bl0t57jo5tiva" path="res://Assets/Laboratory/sciencetable_9tile_2.png" id="16_1up34"]
-[ext_resource type="Texture2D" uid="uid://b6j0vaps2pc8i" path="res://Assets/Laboratory/sciencetable_9tile_3.png" id="17_17sd0"]
-[ext_resource type="Texture2D" uid="uid://c8l8sx1v5cq85" path="res://Assets/Mess Room/cafeteriacounter_1x1.png" id="18_gn6ks"]
-[ext_resource type="Texture2D" uid="uid://dpi50m4bxxo76" path="res://Assets/Mess Room/cafeteriacounter_1x1_BLANK.png" id="19_6fiap"]
-[ext_resource type="Texture2D" uid="uid://f6goqy842fg5" path="res://Assets/Mess Room/cafeteriacounter_1x1_CORNER.png" id="20_vpmqs"]
-[ext_resource type="Texture2D" uid="uid://ypbsmai50xe6" path="res://Assets/Plants/potted plant 1 (2x2 tile).PNG" id="21_e1dl3"]
-[ext_resource type="Texture2D" uid="uid://bpfsabebem3xt" path="res://Assets/Plants/potted plant 2 (2x2 tile).PNG" id="22_3aul2"]
-[ext_resource type="Texture2D" uid="uid://ui3fvuqg7ngo" path="res://Assets/Plants/potted plant small 1 (1x1 tile).PNG" id="24_m3atk"]
-[ext_resource type="Texture2D" uid="uid://mkxla0bmf5hl" path="res://Assets/Plants/potted plant small 2 (1x1 tile).PNG" id="25_thc5n"]
-[ext_resource type="Texture2D" uid="uid://4hei7pvy5hnh" path="res://Assets/Plants/potted plant small 3 (1x1 tile).PNG" id="26_msssd"]
-[ext_resource type="Texture2D" uid="uid://d0s3s7msvf8ug" path="res://Assets/Plants/potted plant small 4 (1x1 tile).PNG" id="27_ltrjs"]
-[ext_resource type="Texture2D" uid="uid://5liwi2d6n4kd" path="res://Assets/Plants/tub plants 1 (1x2 tile).PNG" id="28_5pnsh"]
-[ext_resource type="Texture2D" uid="uid://br6vyubt0eupc" path="res://Assets/Plants/tub plants 2 (1x2 tile).PNG" id="29_pvhq2"]
-[ext_resource type="Texture2D" uid="uid://dvaiorlmpjme0" path="res://Assets/Plants/tub plants 3 (1x2 tile).PNG" id="30_of53a"]
-[ext_resource type="Texture2D" uid="uid://cc2aqmuov4dhb" path="res://Assets/Plants/tub plants 4 (1x2 tile).PNG" id="31_ngjk4"]
-[ext_resource type="Texture2D" uid="uid://c4m0mfvstvqo0" path="res://Assets/Plants/tub plants 5 (1x2 tile.PNG" id="32_8vca0"]
-[ext_resource type="Texture2D" uid="uid://w4bh835schtx" path="res://Assets/World/WallBreaker.png" id="33_twuh2"]
-[ext_resource type="Texture2D" uid="uid://b4l8m8h3jlwms" path="res://Assets/Mess Room/cafeteriacounter_1x1_INTERIOR_CORNER.png" id="35_0dw2d"]
-[ext_resource type="Texture2D" uid="uid://btpnnx0unnv1k" path="res://Assets/Bathroom/bathroomstall_1x1.png" id="36_7kx0f"]
-[ext_resource type="Texture2D" uid="uid://bpia7b4evjxpx" path="res://Assets/World/Colony Floor.png" id="37_5hsf4"]
-[ext_resource type="Texture2D" uid="uid://bmo2u01vi4lep" path="res://Assets/Office/desk_1x2.png" id="37_c6m44"]
-[ext_resource type="Texture2D" uid="uid://bas64nv0kst1u" path="res://Assets/World/Faded Floor.png" id="38_bq83d"]
-[ext_resource type="Texture2D" uid="uid://c8bsq6q1w75bu" path="res://Assets/World/Colony Walls-Sheet.png" id="38_wrv3m"]
-[ext_resource type="Texture2D" uid="uid://byv0krwwus0yg" path="res://Assets/World/Cooridoor-Sheet (1).png" id="39_1hiws"]
-[ext_resource type="Texture2D" uid="uid://un0hxl0ss6g2" path="res://Assets/Office/deskcomputer_1x2.png" id="39_f4ys1"]
-[ext_resource type="Texture2D" uid="uid://7pwyuel4urt4" path="res://Assets/Bathroom/bathroomstall_2x1_CLOSED.png" id="40_kyc4p"]
-[ext_resource type="Texture2D" uid="uid://csck1lcpgd54o" path="res://Assets/Plants/Barrier Plont.png" id="40_trjx0"]
+[ext_resource type="Texture2D" uid="uid://mf0wg6xryj8" path="res://assets/World/Colony Floor Green.png" id="1_wd48g"]
+[ext_resource type="Texture2D" uid="uid://dn245ywu7s47v" path="res://assets/devArtTiles.png" id="2_ijd5e"]
+[ext_resource type="Texture2D" uid="uid://gq0b12uk3kbl" path="res://assets/World/Desert floor.png" id="2_rc51g"]
+[ext_resource type="Texture2D" uid="uid://c8oxpyminxi0" path="res://assets/Bedrooms/doublebed_2x2.png" id="3_ssmip"]
+[ext_resource type="Texture2D" uid="uid://dg4euhm3h8vk" path="res://assets/Bedrooms/locker (1x1).png" id="4_6pnwg"]
+[ext_resource type="Texture2D" uid="uid://dt1nu77stwtlg" path="res://assets/Bedrooms/locker opened (1 x 2).png" id="5_xtmiu"]
+[ext_resource type="Texture2D" uid="uid://cdonp42bb34k1" path="res://assets/Bedrooms/roundtable_2x2.png" id="6_ffm8y"]
+[ext_resource type="Texture2D" uid="uid://dcldhgtj2eha0" path="res://assets/Bedrooms/singlebed_2x1.png" id="7_fskse"]
+[ext_resource type="Texture2D" uid="uid://b7grt35xfflgf" path="res://assets/Bathroom/bathroomstall_2x1_OPEN.png" id="8_n61bd"]
+[ext_resource type="Texture2D" uid="uid://ded7njgwewdlx" path="res://assets/Bathroom/tile000.png" id="9_0x22g"]
+[ext_resource type="Texture2D" uid="uid://tpl68sd20v1m" path="res://assets/Plants/tile001.png" id="9_37uka"]
+[ext_resource type="Texture2D" uid="uid://cufdsebclav5n" path="res://assets/Plants/tile002.png" id="10_r10l3"]
+[ext_resource type="Texture2D" uid="uid://buegtdqa6gxak" path="res://assets/Mess Room/cafeteriatable_9tile_BLANK.png" id="11_n4wym"]
+[ext_resource type="Texture2D" uid="uid://b70pof417ryix" path="res://assets/Mess Room/cafeteriatable_9tile_STUFF1.png" id="12_by7ij"]
+[ext_resource type="Texture2D" uid="uid://c0kjuowtldpvr" path="res://assets/Bathroom/shower (2x2 tile).PNG" id="13_epm42"]
+[ext_resource type="Texture2D" uid="uid://w5l80mimnn11" path="res://assets/Mess Room/cafeteriatable_9tile_STUFF2.png" id="13_qo4gw"]
+[ext_resource type="Texture2D" uid="uid://c5vnjatsmei1b" path="res://assets/Laboratory/sciencecabinet_1x1.png" id="14_0tq8b"]
+[ext_resource type="Texture2D" uid="uid://dqepjkjxp0u1x" path="res://assets/Laboratory/sciencetable_9tile_1.png" id="15_mtysj"]
+[ext_resource type="Texture2D" uid="uid://bl0t57jo5tiva" path="res://assets/Laboratory/sciencetable_9tile_2.png" id="16_1up34"]
+[ext_resource type="Texture2D" uid="uid://b6j0vaps2pc8i" path="res://assets/Laboratory/sciencetable_9tile_3.png" id="17_17sd0"]
+[ext_resource type="Texture2D" uid="uid://c8l8sx1v5cq85" path="res://assets/Mess Room/cafeteriacounter_1x1.png" id="18_gn6ks"]
+[ext_resource type="Texture2D" uid="uid://dpi50m4bxxo76" path="res://assets/Mess Room/cafeteriacounter_1x1_BLANK.png" id="19_6fiap"]
+[ext_resource type="Texture2D" uid="uid://f6goqy842fg5" path="res://assets/Mess Room/cafeteriacounter_1x1_CORNER.png" id="20_vpmqs"]
+[ext_resource type="Texture2D" uid="uid://ypbsmai50xe6" path="res://assets/Plants/potted plant 1 (2x2 tile).PNG" id="21_e1dl3"]
+[ext_resource type="Texture2D" uid="uid://bpfsabebem3xt" path="res://assets/Plants/potted plant 2 (2x2 tile).PNG" id="22_3aul2"]
+[ext_resource type="Texture2D" uid="uid://ui3fvuqg7ngo" path="res://assets/Plants/potted plant small 1 (1x1 tile).PNG" id="24_m3atk"]
+[ext_resource type="Texture2D" uid="uid://mkxla0bmf5hl" path="res://assets/Plants/potted plant small 2 (1x1 tile).PNG" id="25_thc5n"]
+[ext_resource type="Texture2D" uid="uid://4hei7pvy5hnh" path="res://assets/Plants/potted plant small 3 (1x1 tile).PNG" id="26_msssd"]
+[ext_resource type="Texture2D" uid="uid://d0s3s7msvf8ug" path="res://assets/Plants/potted plant small 4 (1x1 tile).PNG" id="27_ltrjs"]
+[ext_resource type="Texture2D" uid="uid://5liwi2d6n4kd" path="res://assets/Plants/tub plants 1 (1x2 tile).PNG" id="28_5pnsh"]
+[ext_resource type="Texture2D" uid="uid://br6vyubt0eupc" path="res://assets/Plants/tub plants 2 (1x2 tile).PNG" id="29_pvhq2"]
+[ext_resource type="Texture2D" uid="uid://dvaiorlmpjme0" path="res://assets/Plants/tub plants 3 (1x2 tile).PNG" id="30_of53a"]
+[ext_resource type="Texture2D" uid="uid://cc2aqmuov4dhb" path="res://assets/Plants/tub plants 4 (1x2 tile).PNG" id="31_ngjk4"]
+[ext_resource type="Texture2D" uid="uid://c4m0mfvstvqo0" path="res://assets/Plants/tub plants 5 (1x2 tile.PNG" id="32_8vca0"]
+[ext_resource type="Texture2D" uid="uid://w4bh835schtx" path="res://assets/World/WallBreaker.png" id="33_twuh2"]
+[ext_resource type="Texture2D" uid="uid://b4l8m8h3jlwms" path="res://assets/Mess Room/cafeteriacounter_1x1_INTERIOR_CORNER.png" id="35_0dw2d"]
+[ext_resource type="Texture2D" uid="uid://btpnnx0unnv1k" path="res://assets/Bathroom/bathroomstall_1x1.png" id="36_7kx0f"]
+[ext_resource type="Texture2D" uid="uid://bpia7b4evjxpx" path="res://assets/World/Colony Floor.png" id="37_5hsf4"]
+[ext_resource type="Texture2D" uid="uid://bmo2u01vi4lep" path="res://assets/Office/desk_1x2.png" id="37_c6m44"]
+[ext_resource type="Texture2D" uid="uid://bas64nv0kst1u" path="res://assets/World/Faded Floor.png" id="38_bq83d"]
+[ext_resource type="Texture2D" uid="uid://c8bsq6q1w75bu" path="res://assets/World/Colony Walls-Sheet.png" id="38_wrv3m"]
+[ext_resource type="Texture2D" uid="uid://byv0krwwus0yg" path="res://assets/World/Cooridoor-Sheet (1).png" id="39_1hiws"]
+[ext_resource type="Texture2D" uid="uid://un0hxl0ss6g2" path="res://assets/Office/deskcomputer_1x2.png" id="39_f4ys1"]
+[ext_resource type="Texture2D" uid="uid://7pwyuel4urt4" path="res://assets/Bathroom/bathroomstall_2x1_CLOSED.png" id="40_kyc4p"]
+[ext_resource type="Texture2D" uid="uid://csck1lcpgd54o" path="res://assets/Plants/Barrier Plont.png" id="40_trjx0"]
+[ext_resource type="Texture2D" uid="uid://dho186c3m0b82" path="res://assets/World/Cracked Wal.png" id="41_hxhbq"]
+[ext_resource type="Texture2D" uid="uid://d2phdi6hmb71o" path="res://assets/StorageRoom/Storage Shelf-Sheet.png" id="42_hf0ur"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q14cl"]
 texture = ExtResource("1_wd48g")
@@ -484,6 +486,45 @@ texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n3upi"]
+texture = ExtResource("41_hxhbq")
+margins = Vector2i(1, 1)
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wd3km"]
+texture = ExtResource("42_hf0ur")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jxbx4"]
 texture = ExtResource("36_7kx0f")
 texture_region_size = Vector2i(32, 32)
@@ -599,3 +640,5 @@ sources/41 = SubResource("TileSetAtlasSource_aw1eu")
 sources/42 = SubResource("TileSetAtlasSource_sb30m")
 sources/43 = SubResource("TileSetAtlasSource_swgo3")
 sources/44 = SubResource("TileSetAtlasSource_3xmgx")
+sources/45 = SubResource("TileSetAtlasSource_n3upi")
+sources/46 = SubResource("TileSetAtlasSource_wd3km")

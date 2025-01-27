@@ -5,6 +5,7 @@ extends StaticBody2D
 @export var slide_door_anim : AnimationPlayer
 @export var locked: bool = true
 @export var keycardRequired: bool = false
+@export var unlockable: bool = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _ready() -> void:
@@ -38,7 +39,7 @@ func enable_collider():
 	door_collider.disabled = false
 
 func unlock():
-	if locked:
+	if unlockable and locked:
 		if keycardRequired:
 			if Globals.InventoryManager.found["keycard"]:
 				locked = false

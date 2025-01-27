@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cufdsebclav5n"
-path="res://.godot/imported/tile002.png-acb54d12cc79797defac94a18ab38a4b.ctex"
+uid="uid://d2phdi6hmb71o"
+path="res://.godot/imported/Storage Shelf-Sheet.png-41329c039c179044bb9ec5718a48caac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/tile002.png"
-dest_files=["res://.godot/imported/tile002.png-acb54d12cc79797defac94a18ab38a4b.ctex"]
+source_file="res://assets/StorageRoom/Storage Shelf-Sheet.png"
+dest_files=["res://.godot/imported/Storage Shelf-Sheet.png-41329c039c179044bb9ec5718a48caac.ctex"]
 
 [params]
 

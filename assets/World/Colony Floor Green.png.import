@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mf0wg6xryj8"
-path="res://.godot/imported/Colony Floor Green.png-6b4c71af45c9a5605b4a1cecdb4d4067.ctex"
+path="res://.godot/imported/Colony Floor Green.png-5be4d5966ba43d81187e5207a1821eb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/Colony Floor Green.png"
-dest_files=["res://.godot/imported/Colony Floor Green.png-6b4c71af45c9a5605b4a1cecdb4d4067.ctex"]
+source_file="res://assets/World/Colony Floor Green.png"
+dest_files=["res://.godot/imported/Colony Floor Green.png-5be4d5966ba43d81187e5207a1821eb8.ctex"]
 
 [params]
 

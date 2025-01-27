@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cufdsebclav5n"
-path="res://.godot/imported/tile002.png-acb54d12cc79797defac94a18ab38a4b.ctex"
+uid="uid://dho186c3m0b82"
+path="res://.godot/imported/Cracked Wal.png-ff2734b95ecf5c9465457c3e3ce2b962.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/tile002.png"
-dest_files=["res://.godot/imported/tile002.png-acb54d12cc79797defac94a18ab38a4b.ctex"]
+source_file="res://assets/World/Cracked Wal.png"
+dest_files=["res://.godot/imported/Cracked Wal.png-ff2734b95ecf5c9465457c3e3ce2b962.ctex"]
 
 [params]
 
