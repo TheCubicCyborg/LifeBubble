@@ -8,17 +8,35 @@ extends Control
 
 @export var animation_player : AnimationPlayer
 
+@export var buttonUnpressed: Texture
+@export var buttonPressed:Texture
+
 var bulb_states = [false, false, false]
 var button_index := 0
 
+var press_timer: float
+var press_length: float = 0.25
+var pressed_button: int
+var pressed:bool = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	for bulb in bulbs:
+		bulb.texture = unlit_texture
 	button_index = 0
 	_set_selected_button(button_index)
 	animation_player.play('RESET')
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if pressed and press_timer > 0:
+		press_timer -= delta
+	if pressed and press_timer <= 0:
+		press_timer = 0
+		buttons[pressed_button].texture = buttonUnpressed
+		pressed = false
+	
+	
 	if Input.is_action_just_pressed("interact"):
 		activate(button_index)
 	elif Input.is_action_just_pressed("move_down"):
@@ -43,6 +61,10 @@ func check_win() -> bool:
 	return true	
 			
 func activate(button_index: int) -> void:
+	buttons[button_index].texture = buttonPressed
+	press_timer = press_length
+	pressed = true
+	pressed_button = button_index
 	if button_index == 0:
 		change_bulb_state(0)
 		change_bulb_state(2)

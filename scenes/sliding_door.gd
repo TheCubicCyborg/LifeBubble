@@ -22,7 +22,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	disable_collider()
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
-	if not body is PlayerController:
+	if locked or not body is PlayerController:
 		return
 	#door_collider.disabled = false
 	#if slide_door_anim.is_playing():
@@ -37,10 +37,11 @@ func disable_collider():
 func enable_collider():
 	door_collider.disabled = false
 
-func unlock_door():
+func unlock():
 	if locked:
 		if keycardRequired:
 			if Globals.InventoryManager.found["keycard"]:
 				locked = false
 		else:
 			locked = false
+	_on_area_2d_body_entered(Globals.Player)

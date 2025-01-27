@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnn2rrcoh0eto"
-path="res://.godot/imported/Sample Oxygen Over.png-70f5816ab79f1de6c5bf83c61061e386.ctex"
+uid="uid://v156l1mh541x"
+path="res://.godot/imported/Light Bulb-Sheet.png-019f4ede82c53540465ddc8eaafd0580.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Sample Oxygen Over.png"
-dest_files=["res://.godot/imported/Sample Oxygen Over.png-70f5816ab79f1de6c5bf83c61061e386.ctex"]
+source_file="res://assets/UI/Light Bulb-Sheet.png"
+dest_files=["res://.godot/imported/Light Bulb-Sheet.png-019f4ede82c53540465ddc8eaafd0580.ctex"]
 
 [params]
 

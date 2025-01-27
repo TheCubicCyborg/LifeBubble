@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br1fenl4rl7yk"
-path="res://.godot/imported/Life Bubble-Sheet.png-708c1c5031007629ab952a693e476476.ctex"
+path="res://.godot/imported/Life Bubble-Sheet.png-3369f219836c4dbc0004df0b4f6cb2fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/Life Bubble-Sheet.png"
-dest_files=["res://.godot/imported/Life Bubble-Sheet.png-708c1c5031007629ab952a693e476476.ctex"]
+source_file="res://assets/World/Life Bubble-Sheet.png"
+dest_files=["res://.godot/imported/Life Bubble-Sheet.png-3369f219836c4dbc0004df0b4f6cb2fe.ctex"]
 
 [params]
 
