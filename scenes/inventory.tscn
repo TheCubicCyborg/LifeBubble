@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://cbjn7xek8q1kw"]
+[gd_scene load_steps=13 format=3 uid="uid://cbjn7xek8q1kw"]
 
 [ext_resource type="Script" path="res://scenes/InventoryManager.gd" id="1_ngycf"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://assets/UI/Test Doc.png" id="2_ba1c6"]
+[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/UI/Test Doc.png" id="2_ba1c6"]
 [ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_pknag"]
-[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://assets/UI/crowbar_inventory.png" id="3_xy7u8"]
+[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://Assets/UI/crowbar_inventory.png" id="3_xy7u8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvuc1"]
 shader = ExtResource("3_pknag")
@@ -84,13 +84,45 @@ tracks/1/keys = {
 "values": [Vector2(0, 1080), Vector2(0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_7c0ff"]
+resource_name = "notes_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainInv/MainInvControl:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.333333, 0.766667),
+"transitions": PackedFloat32Array(1, 1.93187),
+"update": 0,
+"values": [Vector2(0, -1080), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NotesList/NotesListControl:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 1080)]
+}
+
+[sub_resource type="Animation" id="Animation_8l3mg"]
+resource_name = "move_note_right"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hkox4"]
 _data = {
 "RESET": SubResource("Animation_70dpo"),
-"notes_in": SubResource("Animation_mulki")
+"move_note_right": SubResource("Animation_8l3mg"),
+"notes_in": SubResource("Animation_mulki"),
+"notes_out": SubResource("Animation_7c0ff")
 }
 
-[node name="Inventory" type="Control" node_paths=PackedStringArray("animation_player")]
+[node name="Inventory" type="Control" node_paths=PackedStringArray("animation_player", "notes")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -104,11 +136,11 @@ item_textures = {
 "notes": NodePath("MainInv/MainInvControl/Notes")
 }
 animation_player = NodePath("AnimationPlayer")
+notes = [NodePath("NotesList/NotesListControl/LeftPos"), NodePath("NotesList/NotesListControl/FocusPos"), NodePath("NotesList/NotesListControl/RightPos")]
 
 [node name="MainInv" type="CanvasLayer" parent="."]
 
 [node name="MainInvControl" type="Control" parent="MainInv"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -151,8 +183,15 @@ offset_bottom = 637.0
 scale = Vector2(6, 6)
 texture = ExtResource("2_ba1c6")
 
+[node name="ColorRect" type="ColorRect" parent="MainInv"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.101961)
+
 [node name="NotesList" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="NotesListControl" type="Control" parent="NotesList"]
 layout_mode = 3
@@ -165,6 +204,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="LeftPos" type="TextureRect" parent="NotesList/NotesListControl"]
+unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 4
@@ -179,6 +219,7 @@ pivot_offset = Vector2(0, 50)
 texture = ExtResource("2_ba1c6")
 
 [node name="FocusPos" type="TextureRect" parent="NotesList/NotesListControl"]
+unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
@@ -197,6 +238,7 @@ pivot_offset = Vector2(32, 42)
 texture = ExtResource("2_ba1c6")
 
 [node name="RightPos" type="TextureRect" parent="NotesList/NotesListControl"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0

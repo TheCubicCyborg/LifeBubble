@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dcs2cs5xju06t"]
 
 [ext_resource type="Script" path="res://scenes/sliding_door.gd" id="1_nre1q"]
-[ext_resource type="Texture2D" uid="uid://byv0krwwus0yg" path="res://assets/World/Cooridoor-Sheet (1).png" id="2_mppm8"]
+[ext_resource type="Texture2D" uid="uid://byv0krwwus0yg" path="res://Assets/World/Cooridoor-Sheet (1).png" id="2_mppm8"]
 [ext_resource type="Script" path="res://scenes/door_lock.gd" id="3_5umlw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aw3fi"]

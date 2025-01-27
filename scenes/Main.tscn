@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dcs2cs5xju06t" path="res://scenes/sliding_door.tscn" id="5_k1tsw"]
 [ext_resource type="Texture2D" uid="uid://cnn2rrcoh0eto" path="res://Assets/UI/Sample Oxygen Over.png" id="6_bpmf8"]
 [ext_resource type="PackedScene" uid="uid://bociqhrkxg75q" path="res://scenes/breaker.tscn" id="6_e0nwr"]
-[ext_resource type="PackedScene" uid="uid://5vxxr14aeh4i" path="res://scenes/collectible.tscn" id="6_oesdd"]
+[ext_resource type="PackedScene" path="res://scenes/collectible.tscn" id="6_oesdd"]
 [ext_resource type="Script" path="res://scenes/fade_to_black.gd" id="7_1kx37"]
 [ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/UI/Test Doc.png" id="7_52puu"]
 [ext_resource type="Texture2D" uid="uid://d0tgu5avsh5sb" path="res://Assets/UI/Sample Oxygen Fill.png" id="7_yxj20"]
