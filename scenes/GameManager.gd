@@ -13,6 +13,8 @@ var breakers : Array[bool]
 @export var my_dude : FadingRect
 var dead : bool = false
 
+@onready var tilemap_collidable = $Map/Collidables
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Globals.GameManager = self
