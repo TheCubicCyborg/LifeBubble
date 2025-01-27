@@ -13,7 +13,7 @@ var breakers : Array[bool]
 @export var my_dude : FadingRect
 var dead : bool = false
 
-var notes_obtained = []
+var notes_obtained = [0, 1, 2, 3, 4]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
