@@ -1,11 +1,11 @@
 [gd_scene load_steps=15 format=3 uid="uid://sq8ukcdvu0xc"]
 
 [ext_resource type="Script" path="res://scenes/light_puzzle.gd" id="1_l8u4m"]
-[ext_resource type="Texture2D" uid="uid://fubdqrxibaii" path="res://assets/UI/Light Bulb-unlit.png" id="2_80obf"]
-[ext_resource type="Texture2D" uid="uid://cwkiyv86mpi8g" path="res://assets/UI/Light Bulb-lit.png" id="3_2nle2"]
+[ext_resource type="Texture2D" uid="uid://fubdqrxibaii" path="res://Assets/UI/Light Bulb-unlit.png" id="2_80obf"]
+[ext_resource type="Texture2D" uid="uid://cwkiyv86mpi8g" path="res://Assets/UI/Light Bulb-lit.png" id="3_2nle2"]
 [ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_cyog7"]
-[ext_resource type="Texture2D" uid="uid://oudvq3fv8aoj" path="res://assets/UI/Button-unpressed.png" id="5_6vuj3"]
-[ext_resource type="Texture2D" uid="uid://cdddhfs5rhf34" path="res://assets/UI/Button-pressed.png" id="5_d3mqd"]
+[ext_resource type="Texture2D" uid="uid://oudvq3fv8aoj" path="res://Assets/UI/Button-unpressed.png" id="5_6vuj3"]
+[ext_resource type="Texture2D" uid="uid://cdddhfs5rhf34" path="res://Assets/UI/Button-pressed.png" id="5_d3mqd"]
 [ext_resource type="AudioStream" uid="uid://bf6udqlv3nvlc" path="res://soundfx/click.mp3" id="7_u1ecf"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yy4le"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://cqdqsvya7fut0"]
+[gd_scene load_steps=32 format=4 uid="uid://cqdqsvya7fut0"]
 
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="1_xptdi"]
 [ext_resource type="TileSet" uid="uid://bukq4ngrgubs5" path="res://Assets/Tileset.tres" id="2_ncnt3"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bif2wbab605eo" path="res://Assets/UI/Oxygen_back.png" id="5_yqpmu"]
 [ext_resource type="Texture2D" uid="uid://whvek8ed4idw" path="res://Assets/circle.png" id="6_cxhpr"]
 [ext_resource type="PackedScene" uid="uid://bociqhrkxg75q" path="res://scenes/breaker.tscn" id="6_e0nwr"]
-[ext_resource type="PackedScene" uid="uid://5vxxr14aeh4i" path="res://scenes/collectible.tscn" id="6_oesdd"]
+[ext_resource type="PackedScene" path="res://scenes/collectible.tscn" id="6_oesdd"]
 [ext_resource type="Texture2D" uid="uid://d0ihq3wlqt3xc" path="res://Assets/UI/Oxygen_front.png" id="6_pxdud"]
 [ext_resource type="Script" path="res://scenes/my_canvas_mod.gd" id="6_t40rf"]
 [ext_resource type="Script" path="res://scenes/fade_to_black.gd" id="7_1kx37"]
@@ -20,6 +20,8 @@
 [ext_resource type="PackedScene" uid="uid://btr1rbwfilpod" path="res://scenes/interactable.tscn" id="15_6mwv3"]
 [ext_resource type="Script" path="res://scenes/cracked_wall.gd" id="16_4sgyx"]
 [ext_resource type="PackedScene" uid="uid://du4epyap1jsq5" path="res://fade_area.tscn" id="17_fsde8"]
+[ext_resource type="AudioStream" uid="uid://dmsmhpiajwrvg" path="res://soundfx/outside_loop.mp3" id="21_8veir"]
+[ext_resource type="AudioStream" uid="uid://b64kvv0bdajul" path="res://soundfx/inside_winds.mp3" id="22_rttrl"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tdt0f"]
 polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
@@ -183,12 +185,14 @@ zoom = Vector2(3, 3)
 color = Color(1, 1, 1, 0)
 texture = ExtResource("6_cxhpr")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." node_paths=PackedStringArray("light", "the_darkness")]
+[node name="CanvasModulate" type="CanvasModulate" parent="." node_paths=PackedStringArray("light", "the_darkness", "inside_asp", "outside_asp")]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
 script = ExtResource("6_t40rf")
 light = NodePath("../Player/PointLight2D")
 the_darkness = NodePath("../Map/DarknessLayer")
+inside_asp = NodePath("../inside")
+outside_asp = NodePath("../outside")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -354,6 +358,15 @@ modulator = NodePath("../../CanvasModulate")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cracked Wall/Node2D"]
 position = Vector2(-0.5, 39)
 shape = SubResource("RectangleShape2D_4awno")
+
+[node name="outside" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_8veir")
+volume_db = -5.0
+autoplay = true
+
+[node name="inside" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_rttrl")
+volume_db = -10.0
 
 [connection signal="body_entered" from="Bubble" to="." method="enter_bubble"]
 [connection signal="body_exited" from="Bubble" to="." method="exit_bubble"]

@@ -10,6 +10,9 @@ class_name MyCanvasModulate
 @export var the_darkness : TileMapLayer = null
 @onready var my_darkness_tween : Tween = null
 
+@export var inside_asp : AudioStreamPlayer
+@export var outside_asp : AudioStreamPlayer
+
 
 signal finished_fading
 
@@ -65,11 +68,28 @@ func fade_from_black(tween_time):
 	await my_darkness_tween.finished
 	finished_fading.emit()
 	tweening = false
+	
+func start_outside_song():
+	var tween = create_tween()
+	outside_asp.play(0)
+	tween.tween_property(outside_asp, "volume_db", -7, 0.2)
+	var tween2 = create_tween()
+	tween2.tween_property(inside_asp, "volume_db", -100, 0.2)
+
+func start_inside_song():
+	var tween = create_tween()
+	inside_asp.play(0)
+	inside_asp.volume_db = -100
+	tween.tween_property(inside_asp, "volume_db", -10, 0.1)
+	var tween2 = create_tween()
+	tween2.tween_property(outside_asp, "volume_db", -100, 0.2)
 
 func enable_lighting(time):
 	if not lighting_enabled:
 		fade_to_black(time)
+		start_inside_song()
 	
 func disable_lighting(time):
 	if lighting_enabled:
 		fade_from_black(time)
+		start_outside_song()
