@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b70pof417ryix"
-path="res://.godot/imported/cafeteriatable_9tile_STUFF1.png-fb91ab74501bc1dc647b00b00133378e.ctex"
+path="res://.godot/imported/cafeteriatable_9tile_STUFF1.png-0221b31e6c0f0512655c87190817f8a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Mess Room/cafeteriatable_9tile_STUFF1.png"
-dest_files=["res://.godot/imported/cafeteriatable_9tile_STUFF1.png-fb91ab74501bc1dc647b00b00133378e.ctex"]
+source_file="res://Assets/Mess Room/cafeteriatable_9tile_STUFF1.png"
+dest_files=["res://.godot/imported/cafeteriatable_9tile_STUFF1.png-0221b31e6c0f0512655c87190817f8a9.ctex"]
 
 [params]
 

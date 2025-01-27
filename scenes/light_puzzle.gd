@@ -7,6 +7,7 @@ extends Control
 @export var lit_texture : Texture2D
 
 @export var animation_player : AnimationPlayer
+@export var audio_stream_player : AudioStreamPlayer
 
 @export var buttonUnpressed: Texture
 @export var buttonPressed:Texture
@@ -18,6 +19,7 @@ var press_timer: float
 var press_length: float = 0.25
 var pressed_button: int
 var pressed:bool = false
+var won := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -36,19 +38,20 @@ func _process(delta: float) -> void:
 		buttons[pressed_button].texture = buttonUnpressed
 		pressed = false
 	
-	
-	if Input.is_action_just_pressed("interact"):
-		activate(button_index)
-	elif Input.is_action_just_pressed("move_down"):
-		if button_index < 2:
-			button_index += 1
-			_set_selected_button(button_index)
-	elif Input.is_action_just_pressed("move_up"):
-		if button_index > 0:
-			button_index -= 1
-			_set_selected_button(button_index)
+	if not won:
+		if Input.is_action_just_pressed("interact"):
+			activate(button_index)
+		elif Input.is_action_just_pressed("move_down"):
+			if button_index < 2:
+				button_index += 1
+				_set_selected_button(button_index)
+		elif Input.is_action_just_pressed("move_up"):
+			if button_index > 0:
+				button_index -= 1
+				_set_selected_button(button_index)
 	
 	if check_win():
+		won = true
 		await get_tree().create_timer(1.0).timeout
 		animation_player.play('FlyOut')
 		await animation_player.animation_finished
@@ -61,6 +64,7 @@ func check_win() -> bool:
 	return true	
 			
 func activate(button_index: int) -> void:
+	audio_stream_player.play()
 	buttons[button_index].texture = buttonPressed
 	press_timer = press_length
 	pressed = true

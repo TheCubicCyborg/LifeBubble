@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqepjkjxp0u1x"
-path="res://.godot/imported/sciencetable_9tile_1.png-847dccf1cca9078bfc54513194fb2112.ctex"
+path="res://.godot/imported/sciencetable_9tile_1.png-809f65e59c3d13503979f699c926255d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Laboratory/sciencetable_9tile_1.png"
-dest_files=["res://.godot/imported/sciencetable_9tile_1.png-847dccf1cca9078bfc54513194fb2112.ctex"]
+source_file="res://Assets/Laboratory/sciencetable_9tile_1.png"
+dest_files=["res://.godot/imported/sciencetable_9tile_1.png-809f65e59c3d13503979f699c926255d.ctex"]
 
 [params]
 

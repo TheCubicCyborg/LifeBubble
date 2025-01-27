@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fubdqrxibaii"
-path="res://.godot/imported/Light Bulb-unlit.png-a3d43172c774f6bba264aeb75f294365.ctex"
+path="res://.godot/imported/Light Bulb-unlit.png-91cf6ca266b419ee4f44b756e792df82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/Light Bulb-unlit.png"
-dest_files=["res://.godot/imported/Light Bulb-unlit.png-a3d43172c774f6bba264aeb75f294365.ctex"]
+source_file="res://Assets/UI/Light Bulb-unlit.png"
+dest_files=["res://.godot/imported/Light Bulb-unlit.png-91cf6ca266b419ee4f44b756e792df82.ctex"]
 
 [params]
 

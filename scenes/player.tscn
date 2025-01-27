@@ -78,6 +78,7 @@ _animator = NodePath("AnimationPlayer")
 shape = SubResource("CapsuleShape2D_f8on6")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture_filter = 1
 rotation = 1.5708
 texture = ExtResource("2_y8sa7")
 hframes = 3
