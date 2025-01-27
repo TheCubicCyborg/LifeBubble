@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csck1lcpgd54o"
-path="res://.godot/imported/Barrier Plont.png-e0c8fc37cf9f036edc7e9c5f6817de25.ctex"
+path="res://.godot/imported/Barrier Plont.png-5f74720ba3ffd93bd4af2e2cd1f57cce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Plants/Barrier Plont.png"
-dest_files=["res://.godot/imported/Barrier Plont.png-e0c8fc37cf9f036edc7e9c5f6817de25.ctex"]
+source_file="res://assets/Plants/Barrier Plont.png"
+dest_files=["res://.godot/imported/Barrier Plont.png-5f74720ba3ffd93bd4af2e2cd1f57cce.ctex"]
 
 [params]
 

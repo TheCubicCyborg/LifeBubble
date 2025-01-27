@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://cbjn7xek8q1kw"]
 
 [ext_resource type="Script" path="res://scenes/InventoryManager.gd" id="1_ngycf"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/UI/Test Doc.png" id="2_ba1c6"]
+[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://assets/UI/Test Doc.png" id="2_ba1c6"]
 [ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_pknag"]
-[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://Assets/UI/crowbar_inventory.png" id="3_xy7u8"]
+[ext_resource type="Texture2D" uid="uid://cxe0f6qix7qdc" path="res://assets/UI/crowbar_inventory.png" id="3_xy7u8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvuc1"]
 shader = ExtResource("3_pknag")
@@ -139,6 +139,7 @@ animation_player = NodePath("AnimationPlayer")
 notes = [NodePath("NotesList/NotesListControl/LeftPos"), NodePath("NotesList/NotesListControl/FocusPos"), NodePath("NotesList/NotesListControl/RightPos")]
 
 [node name="MainInv" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="MainInvControl" type="Control" parent="MainInv"]
 layout_mode = 3
@@ -192,6 +193,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.101961)
 
 [node name="NotesList" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="NotesListControl" type="Control" parent="NotesList"]
 layout_mode = 3

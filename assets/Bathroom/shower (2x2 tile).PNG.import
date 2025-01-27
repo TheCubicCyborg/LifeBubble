@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0kjuowtldpvr"
-path="res://.godot/imported/shower (2x2 tile).PNG-b357c6bb8313b8bb132c6682ca8351e9.ctex"
+path="res://.godot/imported/shower (2x2 tile).PNG-15507eaaba643fc274777091eba18bd8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bathroom/shower (2x2 tile).PNG"
-dest_files=["res://.godot/imported/shower (2x2 tile).PNG-b357c6bb8313b8bb132c6682ca8351e9.ctex"]
+source_file="res://assets/Bathroom/shower (2x2 tile).PNG"
+dest_files=["res://.godot/imported/shower (2x2 tile).PNG-15507eaaba643fc274777091eba18bd8.ctex"]
 
 [params]
 

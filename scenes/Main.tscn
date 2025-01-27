@@ -1,41 +1,24 @@
 [gd_scene load_steps=22 format=4 uid="uid://cqdqsvya7fut0"]
 
 [ext_resource type="Script" path="res://scenes/GameManager.gd" id="1_xptdi"]
-[ext_resource type="TileSet" uid="uid://bukq4ngrgubs5" path="res://Assets/Tileset.tres" id="2_ncnt3"]
+[ext_resource type="TileSet" uid="uid://bukq4ngrgubs5" path="res://assets/Tileset.tres" id="2_ncnt3"]
 [ext_resource type="PackedScene" uid="uid://cbjn7xek8q1kw" path="res://scenes/inventory.tscn" id="2_pi7qv"]
 [ext_resource type="PackedScene" uid="uid://b3skv6a3ilalc" path="res://scenes/player.tscn" id="3_ojtcp"]
-[ext_resource type="Texture2D" uid="uid://br1fenl4rl7yk" path="res://Assets/World/Life Bubble-Sheet.png" id="4_kjou0"]
+[ext_resource type="Texture2D" uid="uid://br1fenl4rl7yk" path="res://assets/World/Life Bubble-Sheet.png" id="4_kjou0"]
 [ext_resource type="PackedScene" uid="uid://dcs2cs5xju06t" path="res://scenes/sliding_door.tscn" id="5_k1tsw"]
-[ext_resource type="Texture2D" uid="uid://bif2wbab605eo" path="res://Assets/UI/Oxygen_back.png" id="5_yqpmu"]
-[ext_resource type="PackedScene" uid="uid://bociqhrkxg75q" path="res://scenes/breaker.tscn" id="6_e0nwr"]
-[ext_resource type="PackedScene" path="res://scenes/collectible.tscn" id="6_oesdd"]
-[ext_resource type="Texture2D" uid="uid://d0ihq3wlqt3xc" path="res://Assets/UI/Oxygen_front.png" id="6_pxdud"]
+[ext_resource type="Texture2D" uid="uid://bif2wbab605eo" path="res://assets/UI/Oxygen_back.png" id="5_yqpmu"]
+[ext_resource type="PackedScene" path="res://scenes/breaker.tscn" id="6_e0nwr"]
+[ext_resource type="PackedScene" uid="uid://5vxxr14aeh4i" path="res://scenes/collectible.tscn" id="6_oesdd"]
+[ext_resource type="Texture2D" uid="uid://d0ihq3wlqt3xc" path="res://assets/UI/Oxygen_front.png" id="6_pxdud"]
 [ext_resource type="Script" path="res://scenes/fade_to_black.gd" id="7_1kx37"]
 [ext_resource type="Texture2D" uid="uid://cbboym7rr1vm7" path="res://assets/UI/Oxygen_progress.png" id="7_pu2w5"]
+[ext_resource type="Texture2D" uid="uid://c0lijplkycysd" path="res://assets/World/crowbar_world.png" id="8_psq32"]
 [ext_resource type="Texture2D" uid="uid://bj0fif1gnsvwg" path="res://assets/World/FloorCard.png" id="13_yqow2"]
 [ext_resource type="PackedScene" path="res://scenes/interactable.tscn" id="15_6mwv3"]
 [ext_resource type="Script" path="res://scenes/cracked_wall.gd" id="16_4sgyx"]
-[ext_resource type="Texture2D" uid="uid://cfwqrhg4g2dws" path="res://Assets/UI/Test Doc.png" id="7_52puu"]
-[ext_resource type="Texture2D" uid="uid://cbboym7rr1vm7" path="res://Assets/UI/Oxygen_progress.png" id="7_pu2w5"]
-[ext_resource type="Texture2D" uid="uid://c0lijplkycysd" path="res://Assets/World/crowbar_world.png" id="8_psq32"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gaae2"]
 radius = 192.0
-
-[sub_resource type="Animation" id="Animation_fm0pl"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Bubble/Circle(transparent):frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
 
 [sub_resource type="Animation" id="Animation_0evi6"]
 resource_name = "bubblin"
@@ -54,6 +37,21 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3]
 }
 
+[sub_resource type="Animation" id="Animation_fm0pl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bubble/Circle(transparent):frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hsaow"]
 _data = {
 "RESET": SubResource("Animation_fm0pl"),
@@ -65,11 +63,12 @@ size = Vector2(45, 59)
 
 [node name="GameManager" type="Node2D" node_paths=PackedStringArray("my_dude")]
 script = ExtResource("1_xptdi")
-max_oxygen = 15.0
+max_oxygen = 25.0
 refill_speed = 1.0
 my_dude = NodePath("CanvasLayer/FadingRect")
 
-[node name="Inventory" parent="." instance=ExtResource("2_pi7qv")]
+[node name="Inventory" parent="." node_paths=PackedStringArray("notes") instance=ExtResource("2_pi7qv")]
+notes = []
 
 [node name="Map" type="Node2D" parent="."]
 
@@ -140,6 +139,7 @@ offset_right = 666.0
 offset_bottom = 44.0
 
 [node name="FadingRect" type="ColorRect" parent="CanvasLayer"]
+visible = false
 offset_right = 1975.0
 offset_bottom = 1128.0
 color = Color(0, 0, 0, 0)
@@ -209,7 +209,6 @@ script = ExtResource("16_4sgyx")
 crack_position = Vector2(-8, 14)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cracked Wall"]
-position = Vector2(5.5, -1.5)
 shape = SubResource("RectangleShape2D_cdrp0")
 
 [connection signal="body_entered" from="Bubble" to="." method="enter_bubble"]
