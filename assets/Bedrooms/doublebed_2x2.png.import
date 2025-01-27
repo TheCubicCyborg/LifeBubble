@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8oxpyminxi0"
-path="res://.godot/imported/doublebed_2x2.png-884e5c1f53143f66c7f007d65b74357b.ctex"
+path="res://.godot/imported/doublebed_2x2.png-b708d84596b006e1627575bda60b59db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Bedrooms/doublebed_2x2.png"
-dest_files=["res://.godot/imported/doublebed_2x2.png-884e5c1f53143f66c7f007d65b74357b.ctex"]
+source_file="res://Assets/Bedrooms/doublebed_2x2.png"
+dest_files=["res://.godot/imported/doublebed_2x2.png-b708d84596b006e1627575bda60b59db.ctex"]
 
 [params]
 

@@ -30,6 +30,10 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if accepting_input:
 		_input = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	else:
+		_animator.stop()
+		_animator.queue("idle")
+		return
 	_moving = _input != Vector2.ZERO
 	
 	if _input != Vector2.ZERO:
