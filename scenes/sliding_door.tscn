@@ -7,8 +7,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aw3fi"]
 size = Vector2(64, 32)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_b6v5x"]
-radius = 55.21
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0o4h"]
+size = Vector2(85, 195)
 
 [sub_resource type="Animation" id="Animation_6y6fh"]
 length = 0.001
@@ -82,7 +82,8 @@ vframes = 2
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_b6v5x")
+position = Vector2(0.5, 12.5)
+shape = SubResource("RectangleShape2D_j0o4h")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

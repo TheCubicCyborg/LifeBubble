@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ypbsmai50xe6"
-path="res://.godot/imported/potted plant 1 (2x2 tile).PNG-176dcf8f0abb4d977542624ab52d445d.ctex"
+path="res://.godot/imported/potted plant 1 (2x2 tile).PNG-410d1be8d67a1554b7f4e561bbf2978d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Plants/potted plant 1 (2x2 tile).PNG"
-dest_files=["res://.godot/imported/potted plant 1 (2x2 tile).PNG-176dcf8f0abb4d977542624ab52d445d.ctex"]
+source_file="res://assets/Plants/potted plant 1 (2x2 tile).PNG"
+dest_files=["res://.godot/imported/potted plant 1 (2x2 tile).PNG-410d1be8d67a1554b7f4e561bbf2978d.ctex"]
 
 [params]
 

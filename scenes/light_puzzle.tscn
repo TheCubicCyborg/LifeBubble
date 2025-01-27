@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://sq8ukcdvu0xc"]
 
 [ext_resource type="Script" path="res://scenes/light_puzzle.gd" id="1_l8u4m"]
-[ext_resource type="Texture2D" uid="uid://dafv4b8xtjlye" path="res://Assets/lit_bulb.png" id="1_p8kp7"]
-[ext_resource type="Texture2D" uid="uid://cx5iuc1ehf8pq" path="res://Assets/button_temp.png" id="2_7mso5"]
-[ext_resource type="Texture2D" uid="uid://dyjuxcjcx7uaf" path="res://Assets/unlit_bulb.png" id="2_ecl2c"]
+[ext_resource type="Texture2D" uid="uid://dafv4b8xtjlye" path="res://assets/lit_bulb.png" id="1_p8kp7"]
+[ext_resource type="Texture2D" uid="uid://cx5iuc1ehf8pq" path="res://assets/button_temp.png" id="2_7mso5"]
+[ext_resource type="Texture2D" uid="uid://dyjuxcjcx7uaf" path="res://assets/unlit_bulb.png" id="2_ecl2c"]
 [ext_resource type="Shader" path="res://assets/outline.gdshader" id="3_cyog7"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pvlew"]

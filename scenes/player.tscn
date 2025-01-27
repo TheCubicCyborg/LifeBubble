@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="1_8y82w"]
 [ext_resource type="Script" path="res://scenes/interactor.gd" id="2_k7rue"]
-[ext_resource type="Texture2D" uid="uid://bec7kvcxk8ktb" path="res://Assets/Top-down_Player-Sheet.png" id="2_y8sa7"]
+[ext_resource type="Texture2D" uid="uid://bec7kvcxk8ktb" path="res://assets/Top-down_Player-Sheet.png" id="2_y8sa7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f8on6"]
 radius = 8.0

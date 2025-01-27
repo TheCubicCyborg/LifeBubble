@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx5iuc1ehf8pq"
-path="res://.godot/imported/button_temp.png-af6511b47a4f4fee59da4e03be75a502.ctex"
+uid="uid://bas64nv0kst1u"
+path="res://.godot/imported/Faded Floor.png-24735dfc660100f7b6fc65d294663d21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/button_temp.png"
-dest_files=["res://.godot/imported/button_temp.png-af6511b47a4f4fee59da4e03be75a502.ctex"]
+source_file="res://assets/World/Faded Floor.png"
+dest_files=["res://.godot/imported/Faded Floor.png-24735dfc660100f7b6fc65d294663d21.ctex"]
 
 [params]
 
